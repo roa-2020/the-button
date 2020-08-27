@@ -14,8 +14,8 @@ const App = () => {
     <div className="container">
     <Cammy />
     <Route path='/het/' component={Het}/>
-    </Router>    
     </div>
+    </Router>    
   )
 }
 
