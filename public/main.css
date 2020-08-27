@@ -48,25 +48,59 @@ body {
 }
 
 
-/* kanye */
 
-.rotate {
-  animation: rotation 1.8s infinite linear;
-}
-
-@-webkit-keyframes rotate {
-  from {
-    tranform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 .box {
   width: 100px;
   height: 100px;
   background: #ff1c68;
   transform-origin: 50% 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* kanye */
+
+.rotation {
+  animation: rotation 1.8s infinite linear;
+  
+}
+
+@keyframes rotation {
+  from {
+      -webkit-transform: rotate(0deg);
+  }
+  to {
+      -webkit-transform: rotate(359deg);
+  }
 }
 
