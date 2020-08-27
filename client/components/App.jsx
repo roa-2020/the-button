@@ -1,5 +1,5 @@
 import React from "react"
-// lewis
+
 import {HashRouter as Router, Route} from 'react-router-dom'
 
 import Form from './Form'
@@ -8,14 +8,17 @@ import Het from './Het'
 import Kanye from "./Kanye"
 import Cammy from "./Cammy"
 
+
 const App = () => {
   return (
     <Router>
     <div className="container">
+    <Kanye/>
     <Cammy />
     <Route path='/het/' component={Het}/>
-    </Router>    
+   
     </div>
+    </Router> 
   )
 }
 

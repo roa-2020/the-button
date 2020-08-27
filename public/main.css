@@ -49,16 +49,17 @@ body {
 
 /* kanye */
 
-.rotate {
+.rotation {
   animation: rotation 1.8s infinite linear;
+  
 }
 
-@-webkit-keyframes rotate {
+@keyframes rotation {
   from {
-    tranform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+      -webkit-transform: rotate(359deg);
   }
 }
 /* button styles */
