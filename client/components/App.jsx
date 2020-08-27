@@ -1,5 +1,8 @@
 import React from "react"
+
 import Kanye from './Kanye'
+import Cammy from "./Cammy"
+
 const App = () => {
   return (
     <div className="container">
