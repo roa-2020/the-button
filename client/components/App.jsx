@@ -1,5 +1,7 @@
 import React from "react"
 
+import Cammy from "./Cammy"
+
 const App = () => {
   return (
     <div className="container">
