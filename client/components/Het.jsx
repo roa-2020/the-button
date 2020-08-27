@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 const Het = () => {
   return (
-    <div className="container">
-      <a href="#" class="shakeme"></a>
+    <div className='hetContainer'>
+      <a href="#" className="shakeme"></a>
       <div >
         <img className='shakeme' src="/images/HetHead.png" alt="Hetfield Head"/>
         <Form className= 'formCentre'></Form>

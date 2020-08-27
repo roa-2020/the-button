@@ -16,7 +16,6 @@ const App = () => {
     <Kanye/>
     <Cammy />
     <Route path='/het/' component={Het}/>
-   
     </div>
     </Router> 
   )

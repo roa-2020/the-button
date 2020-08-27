@@ -28,7 +28,7 @@ class Form extends React.Component {
   render() {
     return (
       <>
-      <div className='hetContainer'>
+      <div>
         <form onSubmit={this.handleSubmit}>
           <label>
             <textarea name="message" onChange={this.handleChange}></textarea>
