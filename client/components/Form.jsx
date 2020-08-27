@@ -1,6 +1,6 @@
 import React from 'react'
 
-class Contact extends React.Component {
+class Form extends React.Component {
   state = {
     name: '',
     email: '',
@@ -28,28 +28,17 @@ class Contact extends React.Component {
   render() {
     return (
       <>
-        <h3>Contact us:</h3>
+      <div className='hetContainer'>
         <form onSubmit={this.handleSubmit}>
           <label>
-            Name:
-            <input type="text" name="name" onChange={this.handleChange}/>
-          </label>
-
-          <label>
-            Email:
-            <input type="text" name="email" onChange={this.handleChange}/>
-          </label>
-
-          <label>
-            Message:
             <textarea name="message" onChange={this.handleChange}></textarea>
           </label>
-
-          <input type="submit" value="Send"/>
+          <input type="submit" value="YEAH!"/>
         </form>
+      </div>
       </>
     )
   }
 }
-export default Contact
+export default Form
 

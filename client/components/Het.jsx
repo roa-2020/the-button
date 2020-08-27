@@ -1,12 +1,14 @@
-
+import Form from './Form'
 import React from "react";
 import { Link } from "react-router-dom";
 
 const Het = () => {
   return (
-    <div className="HetContainer">
+    <div className="container">
+      <a href="#" class="shakeme"></a>
       <div >
-        <img src="../../public/images/HetHead.png" alt="Hetfield Head"/>
+        <img className='shakeme' src="/images/HetHead.png" alt="Hetfield Head"/>
+        <Form className= 'formCentre'></Form>
       </div>
     </div>
   );
