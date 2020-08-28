@@ -1,6 +1,7 @@
 import React from "react"
 
 export default function Kanye() {
+
   return (
     <div>
       <img
@@ -13,3 +14,4 @@ export default function Kanye() {
     </div>
   )
 }
+

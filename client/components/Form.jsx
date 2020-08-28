@@ -2,27 +2,20 @@ import React from 'react'
 
 class Form extends React.Component {
   state = {
-    name: '',
-    email: '',
-    message: '',
+    yeah: '',
   }
 
   handleChange = (event) => {
-    console.log(event.target.name, event.target.value)
-
-    this.setState({
-      [event.target.name]: event.target.value
-    })
+    // console.log(event.target.value)
+    this.setState({yeah: event.target.value})
   }
+
 
   handleSubmit = (event) => {
     event.preventDefault()
-    
-    console.log('name:', this.state.name)
-    console.log('email:', this.state.email)
-    console.log('message:', this.state.message)
-
-    this.props.history.push('/cute/' + (Math.random() > 0.5 ? 'cats' : 'dogs'))
+    if(this.state.yeah=='yeah'){
+    console.log('IT WORKS' , this.state.yeah)
+  }
   }
 
   render() {
@@ -30,7 +23,7 @@ class Form extends React.Component {
       <>
         <form onSubmit={this.handleSubmit}>
           <label>
-            <input type='text' name="message" onChange={this.handleChange}/>
+            <input type='text' name="message"  onChange={this.handleChange}/>
           </label>
           <input type="submit" value="YEAH!"/>
         </form>
