@@ -10,8 +10,6 @@ const BackBox = posed.div({
 class Back extends React.Component {
   state = { isVisible: true }
   render() {
-    console.log(this.props)
-
     return (
       <>
         {!this.props.match.isExact && (
