@@ -20,7 +20,7 @@ class Cammy extends React.Component {
   render() {
     return (
       <Box className="box" pose={this.state.isVisible ? "visible" : "hidden"}>
-        <h1 className="box-text">Press Me!</h1>
+        <h1 className="box-text" onClick={()=>{this.props.history.push('/')}}>Press Me!</h1>
       </Box>
     )
   }
