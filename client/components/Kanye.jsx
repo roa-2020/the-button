@@ -12,6 +12,6 @@ export default function Kanye() {
         </div>
 
     )
-}  import React from 'react'
+}
 
 
