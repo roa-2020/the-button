@@ -28,14 +28,12 @@ class Form extends React.Component {
   render() {
     return (
       <>
-      <div>
         <form onSubmit={this.handleSubmit}>
           <label>
-            <textarea name="message" onChange={this.handleChange}></textarea>
+            <input type='text' name="message" onChange={this.handleChange}/>
           </label>
           <input type="submit" value="YEAH!"/>
         </form>
-      </div>
       </>
     )
   }
