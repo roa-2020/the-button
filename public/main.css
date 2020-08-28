@@ -152,3 +152,14 @@ body {
   font-weight: normal;
   user-select: none;
 }
+
+input {
+  padding: 10px;
+  font-size: 18px;
+  outline-style: dotted;
+}
+
+input[type="submit"] {
+  outline-style: none;
+  margin-left: 3em;
+}
