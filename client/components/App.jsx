@@ -13,8 +13,8 @@ const App = () => {
   return (
     <Router>
     <div className="container">
-    <Kanye/>
-    <Cammy />
+    <Route path='/kanye/' component={Kanye}/>
+    <Route path='/' component={Cammy}/>
     <Route path='/het/' component={Het}/>
     </div>
     </Router> 
