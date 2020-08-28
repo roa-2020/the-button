@@ -14,13 +14,37 @@ const Box = posed.div({
   },
 })
 
+function handleClick() {
+  console.log("clicked")
+  //   this.props.history.push("/het/")
+}
+function handleRightClick(evt) {
+  evt.preventDefault()
+  console.log("right clicked")
+}
+function handleDblClick() {
+  console.log("double clicked")
+}
+
 class Cammy extends React.Component {
   state = { isVisible: true }
 
   render() {
     return (
-      <Box className="box" pose={this.state.isVisible ? "visible" : "hidden"}>
-        <h1 className="box-text" onClick={()=>{this.props.history.push('/')}}>Press Me!</h1>
+      <Box
+        className="box"
+        onClick={() => {
+          this.props.history.push("/het/")
+        }}
+        onContextMenu={() => {
+          this.props.history.push("/kanye/")
+        }}
+        onDoubleClick={() => {
+          this.props.history.push("/")
+        }}
+        pose={this.state.isVisible ? "visible" : "hidden"}
+      >
+        <h1 className="box-text">Press Me!</h1>
       </Box>
     )
   }
